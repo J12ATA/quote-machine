@@ -18,11 +18,16 @@ const styles = {
     borderRadius: 3,
     border: 0,
     color: 'black',
+    padding: '0 10px',
+    height: 35,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    fontSize: 18,
+    fontWeight: 600,
   },
   text: {
     color: 'white',
-  }
+    fontSize: 35,
+  },
 }
 
 const QuoteMachine = ({classes, randomQuote, newQuoteIndex}) => (
@@ -39,7 +44,7 @@ const QuoteMachine = ({classes, randomQuote, newQuoteIndex}) => (
         target='_blank'
         href={`https://twitter.com/intent/tweet?text=${randomQuote.quote}&hashtags=j12ata`}
       >
-        <FontAwesomeIcon icon={faTwitter} size='md' color='white'></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faTwitter} size='lg' color='#38A1F3'></FontAwesomeIcon>
       </IconButton>
     </CardActions>
   </Card>
