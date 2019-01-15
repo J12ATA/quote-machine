@@ -42,7 +42,7 @@ const QuoteMachine = ({classes, randomQuote, newQuoteIndex}) => (
       <IconButton
         id='tweet-quote'
         target='_blank'
-        href={`https://twitter.com/intent/tweet?text=${randomQuote.quote}&hashtags=j12ata`}
+        href={`https://twitter.com/intent/tweet?text=${randomQuote.quote} - ${randomQuote.author}`}
       >
         <FontAwesomeIcon icon={faTwitter} size='lg' color='#38A1F3'></FontAwesomeIcon>
       </IconButton>
